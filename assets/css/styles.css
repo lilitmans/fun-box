@@ -1,0 +1,233 @@
+@font-face {
+  font-family: 'Trebuchet';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Trebuchet-Regular'), local('Trebuchet Regular'),
+       url('../../fonts/trebuchet-ms/trebuc.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Trebuchet Bold';
+  font-style: bold;
+  font-weight: 900;
+    src: local('Trebuchet-Bold'), local('trebuchet '),
+    url('fonts/trebuchet-ms/trebucbd.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
+/* exo-2-100 - cyrillic */
+@font-face {
+  font-family: 'Exo 2';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../../fonts/exo-2-v5-cyrillic/exo-2-v5-cyrillic-100.eot'); /* IE9 Compat Modes */
+  src: local('Exo 2 Thin'), local('Exo2-Thin'),
+       url('../../fonts/exo-2-v5-cyrillic/exo-2-v5-cyrillic-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../fonts/exo-2-v5-cyrillic/exo-2-v5-cyrillic-100.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../fonts/exo-2-v5-cyrillic/exo-2-v5-cyrillic-100.woff') format('woff'), /* Modern Browsers */
+       url('../../fonts/exo-2-v5-cyrillic/exo-2-v5-cyrillic-100.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../../fonts/exo-2-v5-cyrillic/exo-2-v5-cyrillic-100.svg#Exo2') format('svg'); /* Legacy iOS */
+}
+
+html,
+body {
+	margin: 0;
+	overflow-x: none;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+	outline: none;
+}
+
+.hide-block {
+	display: none;
+}
+
+.clear {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.flex-container {
+    display: flex;
+}
+
+.main-content {
+    position: relative;
+    overflow-x: hidden;
+    flex-direction: column;
+    background-image: url('../img/main-background.png');
+    background-repeat: repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-heading {
+    font-family: 'Exo 2', sans-serif;
+    margin-top: 48px;
+    margin-bottom: 0;
+    font-size: 36px;
+    color: white;
+    text-align: center;
+}
+
+.banners-block {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    margin-bottom: 30px;
+}
+
+.banner-container {
+    position: relative;
+    width: 320px;
+    background: transparent;
+    margin: 0 40px;
+    margin-top: 26px;
+}
+
+.banner {
+    height: 100%;
+}
+
+.banner-text-block {
+    padding-top: 24px;
+    padding-left: 50px;
+    line-height: 1.1;
+}
+
+.banner-heading {
+    font-family: 'Trebuchet-Bold', sans-serif;
+    font-size: 48px;
+    margin: 0;
+}
+
+.grey-txt {
+    color: #666666; /*grey*/
+}
+
+.banner-sub-heading {
+    font-family: 'Trebuchet-Regular', sans-serif;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.banner-sub-heading-with {
+    font-family: 'Trebuchet-Bold', sans-serif;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.banner-product-description-quantity {
+    font-family: 'Trebuchet-Regular', sans-serif;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.blue-bg {
+    background-color: #1698d9 !important; /*blue*/
+}
+
+.pink-bg {
+    background-color: #d91667 !important; /*pink*/
+}
+
+.grey-bg {
+    background-color: #b3b3b3 !important; /*light grey*/
+}
+
+.banner-product-weight {
+    font-family: 'Trebuchet-Regular', sans-serif;
+    position: absolute;
+    width: 83px;
+    height: 83px;
+    border-radius: 50px;
+    bottom: 15px;
+    right: 15px;
+    color: white;
+    font-size: 42px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    flex-direction: column;
+    line-height: 1;
+    background-color: #b3b3b3; /*light grey*/
+}
+
+.prodict-kilogram {
+    font-size: 21px;
+}
+
+.banner-text {
+    font-family: 'Trebuchet-Regular', sans-serif;
+    font-size: 13px;
+    color: white;
+    margin-top: 16px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.banner-buy-link,
+.banner-buy-link:hover,
+.banner-buy-link:active {
+    color: #1698d9; /*blue*/
+    text-decoration: underline;
+    -moz-text-decoration-style: dashed; 
+    -webkit-text-decoration-style: dashed; 
+    text-decoration-style: dashed;
+    cursor: pointer;
+}
+
+.banner-text-disabled {
+    color: #ffff66 !important; /*light yellow*/
+}
+
+.disabled-image {
+    filter: opacity(50%);
+}
+
+.disabled-image-txt {
+    color: #d4d4d4 !important; /*lightest grey*/
+}
+
+.image-view-border {
+    position: relative;
+    background-color: #b3b3b3; /*light grey*/
+    height: 480px;
+    width: 320px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    -webkit-clip-path: polygon(42px 0, 100% 0, 100% 100%, 0 100%, 0 42px);
+    clip-path: polygon(42px 0, 100% 0, 100% 100%, 0 100%, 0 42px);
+}
+
+.image-view {
+    background: #fff;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    border-top-right-radius: 14px;
+    width: 312px;
+    height: 472px;
+    -webkit-clip-path: polygon(41px 0, 100% 0, 100% 100%, 0 100%, 0 41px);
+    clip-path: polygon(41px 0, 100% 0, 100% 100%, 0 100%, 0 41px);
+    overflow: hidden;
+}
+
+.cat-img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+

@@ -1,0 +1,36 @@
+@media only screen and (max-width: 1200px) {
+    .banner-container {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 1140px) {
+    .banner-container {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .banner-container {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    
+}
+
+@media only screen and (max-width: 576px) {
+    .banner-text {
+        padding: 0 15px;
+    }
+}
+
+@media only screen and (min-width: 320px)
+and (max-width: 991px) {
+
+}
